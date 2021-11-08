@@ -5,7 +5,7 @@ namespace ChainedEvents
     // define the delegate for the event handler
     public delegate void myEventHandler(string value);
 
-    class MyClass
+    class EventPublisher
     {
         private string theVal;
         // declare the event handler
@@ -14,8 +14,7 @@ namespace ChainedEvents
 
         public string Val
         {
-            set
-            {
+            set {
                 this.theVal = value;
                 // when the value changes, fire the event
                 this.valueChanged(theVal);
@@ -34,29 +33,25 @@ namespace ChainedEvents
         static void Main(string[] args)
         {
             // create the test class
-            MyClass obj = new MyClass();
+            EventPublisher obj = new EventPublisher();
             // Connect multiple event handlers
             obj.valueChanged += new myEventHandler(changeListener1);
             obj.valueChanged += new myEventHandler(changeListener2);
 
             // Use an anonymous delegate as the event handler
-            obj.valueChanged += delegate (string s)
-            {
+            obj.valueChanged += delegate (string s) {
                 Console.WriteLine("This came from the anonymous handler!");
             };
 
-            obj.objChanged += delegate (object sender, ObjChangeEventArgs e)
-            {
+            obj.objChanged += delegate (object sender, ObjChangeEventArgs e) {
                 Console.WriteLine("{0} had the '{1}' property changed", sender.GetType(), e.propChanged);
             };
 
             string str;
-            do
-            {
+            do {
                 Console.WriteLine("Enter a value: ");
                 str = Console.ReadLine();
-                if (!str.Equals("exit"))
-                {
+                if (!str.Equals("exit")) {
                     obj.Val = str;
                 }
             } while (!str.Equals("exit"));

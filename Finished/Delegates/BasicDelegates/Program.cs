@@ -17,6 +17,7 @@ namespace BasicDelegates
 
     class Program
     {
+        // TODO: Create functions to serve as delegate implementations
         static string func1(int a, int b)
         {
             return (a + b).ToString();

@@ -8,12 +8,8 @@ namespace AnonymousDelegates
     {
         static void Main(string[] args)
         {
-            // Implement an anonymous delegate
-            MyDelegate f = delegate (int arg1, int arg2)
-            {
-                return (arg1 + arg2).ToString();
-            };
-            Console.WriteLine("The number is: " + f(10, 20));
+            // TODO: Implement an anonymous delegate
+
 
             // Keep the console window open until a key is pressed
             Console.WriteLine("\nPress Enter Key to Continue...");
