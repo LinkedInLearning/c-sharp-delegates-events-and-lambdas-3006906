@@ -36,8 +36,6 @@ namespace Composable2
             Console.WriteLine("\nCalling the chained delegates");
             f1f2(a, b);
 
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

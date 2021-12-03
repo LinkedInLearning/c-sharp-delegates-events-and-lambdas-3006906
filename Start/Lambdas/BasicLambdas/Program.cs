@@ -19,9 +19,6 @@ namespace BasicLambdas
 
             // TODO: Define an expression delegate
 
-            // Keep the Command Line window open
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

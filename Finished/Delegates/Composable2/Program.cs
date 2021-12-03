@@ -36,9 +36,6 @@ namespace Composable2
             // Call the composed delegate
             Console.WriteLine("\nCalling the chained delegates");
             f1f2(a, ref b);
-
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

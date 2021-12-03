@@ -40,9 +40,6 @@ namespace Composable
             Console.WriteLine("\nCalling the unchained delegates");
             f1f2 -= f1;
             f1f2(b, b);
-
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

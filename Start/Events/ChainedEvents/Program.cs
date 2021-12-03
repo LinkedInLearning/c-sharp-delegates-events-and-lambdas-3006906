@@ -10,7 +10,7 @@ namespace ChainedEvents
         private string theVal;
         // declare the event handler
         public event myEventHandler valueChanged;
-        // TODO: Use the EventArgs class
+        // TODO4: Use the EventArgs class
 
 
         public string Val
@@ -19,13 +19,13 @@ namespace ChainedEvents
                 this.theVal = value;
                 // when the value changes, fire the event
                 this.valueChanged(theVal);
-                // TODO: Use the custom event handler
+                // TODO5: Use the custom event handler
 
             }
         }
     }
 
-    // TODO: Create a subclass of EventArgs for our use
+    // TODO3: Create a subclass of EventArgs for our use
 
     class Program
     {
@@ -33,13 +33,13 @@ namespace ChainedEvents
         {
             // create the test class
             EventPublisher obj = new EventPublisher();
-            // TODO: Connect multiple event handlers
+            // TODO1: Connect multiple event handlers
 
 
-            // TODO: Use an anonymous delegate as the event handler
+            // TODO2: Use an anonymous delegate as the event handler
 
 
-            // TODO: Listen for the custom event we defined with EventArgs
+            // TODO6: Listen for the custom event we defined with EventArgs
 
 
             string str;

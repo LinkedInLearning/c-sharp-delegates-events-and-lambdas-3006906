@@ -30,10 +30,6 @@ namespace BasicLambdas
             ExprDelegate d3 = (x) => x > 10;
             Console.WriteLine("Calling d3 with 5: {0}", d3(5));
             Console.WriteLine("Calling d3 with 15: {0}", d3(15));
-
-            // Keep the Command Line window open
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

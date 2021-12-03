@@ -28,8 +28,6 @@ namespace BasicDelegates
             // TODO: Use an instance function of a class as a delegate
 
 
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

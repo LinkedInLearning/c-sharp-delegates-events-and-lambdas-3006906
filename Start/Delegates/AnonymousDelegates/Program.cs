@@ -10,10 +10,6 @@ namespace AnonymousDelegates
         {
             // TODO: Implement an anonymous delegate
 
-
-            // Keep the console window open until a key is pressed
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }

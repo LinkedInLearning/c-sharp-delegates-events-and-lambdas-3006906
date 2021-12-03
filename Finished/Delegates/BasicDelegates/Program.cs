@@ -37,9 +37,6 @@ namespace BasicDelegates
             MyClass mc = new MyClass();
             f = mc.instanceMethod1;
             Console.WriteLine("The number is: " + f(10, 20));
-
-            Console.WriteLine("\nPress Enter Key to Continue...");
-            Console.ReadLine();
         }
     }
 }
