@@ -7,7 +7,7 @@ This repository has the starting and finished example code for the C# Delegates,
 ## Installing
 1. To use these exercise files, you must have the following installed:
 	- A text editor or IDE, such as Visual Studio, Visual Studio Code, Atom, etc
-    - The .NET SDK, at least version 5
+    - The .NET SDK, version 5
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 
 
